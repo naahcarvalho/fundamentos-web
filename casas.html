@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bem vindo ao mundo encantado de Hogwarts!" />
+    <meta
+      name="description"
+      content="Bem vindo ao mundo encantado de Hogwarts!"
+    />
     <meta name="author" content="Nathalia Carvalho" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <title>Harry Potter</title>
+    <link rel="stylesheet" href="./assets/casas.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
+  <body id="topo">
     <header>
       <div id="header_content">
         <div id="titulo">
@@ -35,14 +45,16 @@
     </header>
 
     <main>
-      <h2>O que são as casas de Hogwarts?</h2>
+      <section id="introducao">
+        <h2>O que são as casas de Hogwarts?</h2>
 
-      <img
-        src="./assets/img/casas.png"
-        alt="Brasões das quatro casas de Hogwarts"
-      />
+        <img
+          src="./assets/img/casas.png"
+          alt="Brasões das quatro casas de Hogwarts"
+        />
+      </section>
 
-      <section id="explicacao">
+      <section id="texto">
         <p>
           Em Hogwarts, os alunos são divididos em quatro casas diferentes desde
           o primeiro dia de aula. Cada casa tem características únicas e juntas
@@ -53,54 +65,58 @@
         </p>
       </section>
 
-      <section id="grifinoria">
-        <img
-          src="./assets/img/grifinoria.png"
-          alt="Imagem de um leão com cachecol vermelho listrado, referente a casa Grifinória"
-        />
-        <h3>Grifinória</h3>
-        <p>
-          Conhecida pela coragem, bravura e determinação. Se você gosta de
-          aventuras (mesmo perigosas) e de proteger quem ama, essa é a sua casa!
-        </p>
-      </section>
+      <section id="casas-container">
+        <section id="grifinoria">
+          <img
+            src="./assets/img/grifinoria.png"
+            alt="Imagem de um leão com cachecol vermelho listrado, referente a casa Grifinória"
+          />
+          <h3>Grifinória</h3>
+          <p>
+            Conhecida pela coragem, bravura e determinação. Se você gosta de
+            aventuras (mesmo perigosas) e de proteger quem ama, essa é a sua
+            casa!
+          </p>
+        </section>
 
-      <section id="sonserina">
-        <img
-          src="./assets/img/sonserina.png"
-          alt="Imagem de uma cobra com cachecol verde listrado, referente a casa Sonserina "
-        />
-        <h3>Sonserina</h3>
-        <p>
-          Casa da ambição, astúcia e liderança. Se você gosta de desafios,
-          estratégias e sabe muito bem o que quer da vida, Sonserina te espera.
-        </p>
-      </section>
+        <section id="sonserina">
+          <img
+            src="./assets/img/sonserina.png"
+            alt="Imagem de uma cobra com cachecol verde listrado, referente a casa Sonserina "
+          />
+          <h3>Sonserina</h3>
+          <p>
+            Casa da ambição, astúcia e liderança. Se você gosta de desafios,
+            estratégias e sabe muito bem o que quer da vida, Sonserina te
+            espera.
+          </p>
+        </section>
 
-      <section id="corvinal">
-        <img
-          src="./assets/img/corvinal.png"
-          alt="Imagem de um corvo com cachecol azul listrado, referente a casa Corvinal "
-        />
-        <h3>Corvinal</h3>
-        <p>
-          Onde estão os inteligentes, criativos e curiosos. Se você ama
-          aprender, criar teorias e valoriza a sabedoria, Corvinal é seu lugar
-          perfeito para brilhar.
-        </p>
-      </section>
+        <section id="corvinal">
+          <img
+            src="./assets/img/corvinal.png"
+            alt="Imagem de um corvo com cachecol azul listrado, referente a casa Corvinal "
+          />
+          <h3>Corvinal</h3>
+          <p>
+            Onde estão os inteligentes, criativos e curiosos. Se você ama
+            aprender, criar teorias e valoriza a sabedoria, Corvinal é seu lugar
+            perfeito para brilhar.
+          </p>
+        </section>
 
-      <section id="lufa-lufa">
-        <img
-          src="./assets/img/lufa-lufa.png"
-          alt="Imagem de um texugo com cachecol amarelo listrado, referente a casa Lufa Lufa "
-        />
-        <h3>Lufa-Lufa</h3>
-        <p>
-          A casa dos pacientes, leais e trabalhadores. Aqui ficam os bruxos que
-          sempre ajudam quem precisa, são humildes e têm o coração mais generoso
-          de Hogwarts.
-        </p>
+        <section id="lufa-lufa">
+          <img
+            src="./assets/img/lufa-lufa.png"
+            alt="Imagem de um texugo com cachecol amarelo listrado, referente a casa Lufa Lufa "
+          />
+          <h3>Lufa-Lufa</h3>
+          <p>
+            A casa dos pacientes, leais e trabalhadores. Aqui ficam os bruxos
+            que sempre ajudam quem precisa, são humildes e têm o coração mais
+            generoso de Hogwarts.
+          </p>
+        </section>
       </section>
 
       <section id="chapeu-seletor">
@@ -122,16 +138,17 @@
     </main>
 
     <footer>
-      <section id="redes_sociais">
+      <section id="redes-sociais">
         <a href="https://www.linkedin.com/in/naah-carvalho/" target="_blank">
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
         </a>
         <a href="https://github.com/naahcarvalho" target="_blank">
-          <img src="assets/img/github.svg" alt="Github" />
+          <img src="./assets/img/github.svg" alt="Github" />
         </a>
       </section>
-
-      <h3>Feito com 🩷 e ✨ magia por Naah Carvalho - 2025</h3>
+      <p>Desenvolvido com feitiços autorizados pelo Ministério da Magia ⚡</p>
+      <p>Naah Carvalho, 2025</p>
     </footer>
+    <a href="#topo" class="voltar-topo">⇡</a>
   </body>
 </html>

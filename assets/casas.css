@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "HarryPotter";
+  src: url("./fonts/HarryPotter.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #6b1b1b;
+  color: #c5a100;
+}
+
+#titulo h1 {
+  font-family: "HarryPotter", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#menu-lista {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-lista li a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  color: #ee6262;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#menu-lista li a:hover {
+  transform: scale(1.2);
+  color: #f2c94c;
+}
+
+main {
+  background-image: url(./img/fundo-pergaminho.jpg);
+}
+
+#introducao h2 {
+  font-family: "HarryPotter", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: #321203;
+}
+
+#introducao img {
+  display: block;
+  margin: 0 auto 70px auto;
+  max-width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+
+#texto p {
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-size: 18px;
+  color: #321203;
+  font-weight: bold;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+#casas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#casas-container section {
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  color: #321203;
+}
+
+#casas-container section img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+#casas-container section h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#casas-container section p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+#grifinoria {
+  background-color: #7f1d1d;
+  border: 20px double #ee6262;
+}
+
+#grifinoria h3 {
+  color: #ee6262;
+}
+
+#grifinoria p {
+  color: #f5c9c9;
+}
+
+#sonserina {
+  background-color: #134615;
+  border: 20px double #64da64;
+}
+
+#sonserina h3 {
+  color: #64da64;
+}
+
+#sonserina p {
+  color: #b2d8b2;
+}
+
+#corvinal {
+  background-color: #2b3e6f;
+  border: 20px double #5880cb;
+}
+
+#corvinal h3 {
+  color: #5880cb;
+}
+
+#corvinal p {
+  color: #c0d4f9;
+}
+
+#lufa-lufa {
+  background-color: #8b7a1a;
+  border: 20px double #e0c842;
+}
+
+#lufa-lufa h3 {
+  color: #e0c842;
+}
+
+#lufa-lufa p {
+  color: #f5eaaa;
+}
+
+#chapeu-seletor {
+  color: #321203;
+  padding-top: 80px;
+  text-align: center;
+}
+
+#chapeu-seletor h2 {
+  font-family: "HarryPotter", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+#chapeu-seletor p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#chapeu-seletor img {
+  width: 200px;
+  transition: transform 0.3s ease;
+  margin-bottom: 60px;
+}
+
+#chapeu-seletor img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6b1b1b;
+  color: #ac5959;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+#redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#redes-sociais a img {
+  width: 70px;
+  height: 70px;
+}
+
+.voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #744833;
+  color: white;
+  padding: 20px 28px;
+  border-radius: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.voltar-topo:hover {
+  background-color: #321203;
+  transform: scale(1.1);
+}
