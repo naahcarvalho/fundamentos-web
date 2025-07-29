@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "HarryPotter";
+  src: url("./fonts/HarryPotter.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #6b1b1b;
+  color: #c5a100;
+}
+
+#titulo h1 {
+  font-family: "HarryPotter", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#menu-lista {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* espaço entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+#menu-lista li a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  color: #ee6262;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#menu-lista li a:hover {
+  transform: scale(1.2); /* aumenta sem empurrar os outros */
+  color: #f2c94c; /* exemplo de cor mais clara no hover */
+}
+
+main {
+  background-image: url(./img/fundo-pergaminho.jpg);
+}
+
+#conteudo {
+  max-width: 90%; /* Ocupa até 90% da largura da tela */
+  max-width: 800px; /* Limite máximo para telas grandes */
+  margin: 0 auto;
+}
+
+#conteudo h2 {
+  font-family: "HarryPotter", sans-serif;
+  padding-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #321203;
+}
+
+#conteudo img {
+  display: block;
+  margin: 0 auto 70px auto; /* 30px espaço abaixo da imagem */
+  max-width: 100%; /* Garante que a imagem fique responsiva */
+  height: auto;
+  padding-top: 30px;
+}
+
+#conteudo h3 {
+  padding-top: 70px;
+  font-size: 24px;
+  margin: 0 auto; /* 👈 espaço entre o h3 e o parágrafo */
+  text-align: center;
+}
+
+#conteudo p {
+  line-height: 1.6; /* melhora a leitura do texto */
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#sinopse_container {
+  background-color: #6b1b1b;
+  border: 2px solid #9b5d5d;
+  border-radius: 40px;
+  padding: 60px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(119, 63, 63, 0.1);
+}
+
+#sinopse_container h3 {
+  font-size: 24px;
+  margin-bottom: 30px; /* espaço entre título e texto */
+  padding-top: 0;
+  color: #e0b2b2;
+}
+
+#sinopse_container p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #d77c7c;
+}
+
+#personagens h2 {
+  font-family: "HarryPotter", sans-serif;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: #321203;
+}
+
+.personagem-box {
+  display: flex;
+  flex-direction: column;
+  border: 20px double #524913;
+  border-radius: 40px;
+  background-color: rgba(35, 30, 6, 0.85);
+  padding: 25px 30px;
+  max-width: 650px;
+  margin: 30px auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.nome-personagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nome-personagem img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+.nome-personagem h3 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(225, 186, 30);
+}
+
+.personagem-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  text-align: center;
+  padding: 0 20px; /* Espaço interno (top/bottom, left/right) */
+  max-width: 500px; /* Limita a largura */
+  color: rgb(197, 176, 89);
+}
+
+#filmes {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 60px;
+}
+
+#filmes h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "HarryPotter", sans-serif;
+  letter-spacing: 2px;
+  color: #321203;
+}
+
+.conteudo-filmes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.conteudo-filmes img {
+  width: 250px;
+  height: auto;
+}
+
+.lista-filmes {
+  list-style: disc;
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.lista-filmes li {
+  margin-bottom: 14px; /* Ajuste esse valor para o espaçamento que quiser */
+  padding-top: 20px;
+  color: #422f1b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+}
+
+#filmes p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto 10px auto; /* top, right/left, bottom */
+  text-align: center;
+  color: #422f1b;
+  font-weight: bold;
+}
+
+#video {
+  text-align: center;
+  padding: 0px 0px 80px;
+}
+
+#video h2 {
+  font-family: "HarryPotter", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #321203;
+}
+
+#youtube iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #6b1b1b;
+  color: #ac5959;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+#redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço entre os ícones */
+  margin-bottom: 20px;
+}
+
+#redes-sociais a img {
+  width: 70px; /* Ajuste conforme seu SVG */
+  height: 70px;
+}
+
+.voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #744833;
+  color: white;
+  padding: 20px 28px;
+  border-radius: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.voltar-topo:hover {
+  background-color: #321203;
+  transform: scale(1.1);
+}
