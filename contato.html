@@ -9,9 +9,16 @@
     />
     <meta name="author" content="Nathalia Carvalho" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Meu Perfil</title>
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="./assets/contato.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body id="topo">
     <header>
       <div id="header_content">
         <div id="titulo">
@@ -37,68 +44,74 @@
     </header>
 
     <main>
-      <h1>
-        Tem uma dúvida ou quer conversar? Mande sua coruja ou mensagem mesmo!
-      </h1>
-      <img
-        src="./assets/img/coruja.png"
-        alt="Imagem de uma coruja com as asas abertas carregando uma vassoura e uma carta"
-      />
+      <section id="inicio">
+        <h1>Fique a vontade para enviar sua mensagem</h1>
+        <h2>aceitamos corujas e e-mails!</h2>
+      </section>
+
       <section id="contact">
-        <form action="#" method="post">
-          <label for="nome">Nome: </label>
-          <input
-            id="nome"
-            type="text"
-            name="name"
-            placeholder="Digite seu nome"
-            required
+        <div class="form-container">
+          <img
+            src="./assets/img/coruja.png"
+            alt="Imagem de uma coruja com as asas abertas carregando uma vassoura e uma carta"
           />
-          <span id="txtNome"></span>
 
-          <label for="email">Email: </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Digite seu email"
-            required
-          />
-          <span id="txtEmail"></span>
+          <form action="#" method="post">
+            <label for="nome">Nome: </label>
+            <input
+              id="nome"
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+              required
+            />
+            <span id="txtNome"></span>
 
-          <label for="subject">Assunto: </label>
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Digite o título da mensagem"
-            required
-          />
-          <span id="txtSubject"></span>
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
+            <span id="txtEmail"></span>
 
-          <label for="message">Mensagem: </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Digite sua mensagem"
-            required
-          ></textarea>
+            <label for="subject">Assunto: </label>
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="Digite o título da mensagem"
+              required
+            />
+            <span id="txtSubject"></span>
 
-          <button type="submit">Enviar</button>
-        </form>
+            <label for="message">Mensagem: </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Digite sua mensagem"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
 
         <article id="mapa">
           <div id="endereco">
             <p>
               Nosso castelo mágico fica no Alnwick Castle, só chega quem conhece
-              o caminho secreto (ou tem um carro voador)!<br />
+              o caminho secreto
             </p>
-            <p>Alnwick, Northumberland NE66 1NQ</p>
-            <p>Reino Unido</p>
+            <p>(ou tem um carro voador)!</p>
+            <p>Alnwick, Northumberland NE66 1NQ - Reino Unido</p>
           </div>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.700095257223!2d-1.7059204!3d55.415582799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e00e0ed23bc0d%3A0x8783a98b290f641!2sCastelo%20de%20Alnwick!5e0!3m2!1spt-BR!2sbr!4v1753365406257!5m2!1spt-BR!2sbr"
+            title="Mapa do Castelo de Alnwick"
             width="600"
             height="450"
             style="border: 0"
@@ -111,16 +124,17 @@
     </main>
 
     <footer>
-      <section id="redes_sociais">
-        <a href="https://www.linkedin.com/in/naah-carvalho/">
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+      <section id="redes-sociais">
+        <a href="https://www.linkedin.com/in/naah-carvalho/" target="_blank">
+          <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
         </a>
-        <a href="https://github.com/naahcarvalho">
-          <img src="assets/img/github.svg" alt="Github" />
+        <a href="https://github.com/naahcarvalho" target="_blank">
+          <img src="./assets/img/github.svg" alt="Github" />
         </a>
       </section>
-
-      Feito com 🩷 e ✨ magia por Naah Carvalho - 2025
+      <p>Desenvolvido com feitiços autorizados pelo Ministério da Magia ⚡</p>
+      <p>Naah Carvalho, 2025</p>
     </footer>
+    <a href="#topo" class="voltar-topo">⇡</a>
   </body>
 </html>
