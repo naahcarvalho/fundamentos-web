@@ -10,8 +10,15 @@
     <meta name="author" content="Nathalia Carvalho" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <title>Harry Potter</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body id="topo">
     <header>
       <div id="header_content">
         <div id="titulo">
@@ -38,107 +45,114 @@
 
     <main>
       <section id="about">
-        <h2>Bem vindo ao mundo encantado de Hogwarts!</h2>
-
         <div id="conteudo">
+          <h2>Bem vindo ao mundo encantado de Hogwarts!</h2>
+
           <img
             src="./assets/img/harry-potter.png"
             alt="Imagem dos personagens principais do filme (Rony, Harry e Hermione) com o castelo de Hogwarts ao fundo"
           />
 
-          <h3>Sinopse:</h3>
+          <div id="sinopse_container">
+            <h3>SINOPSE</h3>
 
-          <article id="sobre_texto">
-            <p>
-              Harry Potter conta a história de um garoto órfão que vivia com
-              seus tios até descobrir, aos 11 anos, que era um bruxo. Um dia,
-              ele recebe uma carta misteriosa para estudar em Hogwarts, a escola
-              de magia e bruxaria que ele nem imaginava existir, e descobre que
-              é famoso no mundo mágico por ter sobrevivido ao maior bruxo das
-              trevas de todos os tempos, Lord Voldemort, também conhecido como
-              “Aquele-Que-Não-Deve-Ser-Nomeado” quando ainda era bebê, mesmo sem
-              saber como. Em Hogwarts, Harry faz amigos incríveis, como Rony,
-              sempre leal (apesar do pavor de aranhas), e Hermione, a bruxa mais
-              inteligente da turma, que salva eles das enrascadas 99% das vezes.
-              Lá, ele aprende feitiços como Expelliarmus (seu preferido para
-              desarmar inimigos), voa em vassouras supervelozes como a Nimbus
-              2000, joga Quadribol (um esporte de bruxos que mistura adrenalina
-              e altura) e enfrenta perigos que fariam muita gente querer voltar
-              pra casa rapidinho. Ao longo da saga, Harry descobre a verdade
-              sobre seus pais, o poder da amizade, da coragem e da escolha,
-              enfrentando desafios que provam que, como disse Dumbledore, “são
-              as nossas escolhas que mostram quem realmente somos, muito mais do
-              que as nossas habilidades.” Entre aventuras mágicas, poções
-              misteriosas e criaturas fantásticas, Harry Potter nos mostra que,
-              mesmo quando tudo parece escuro, “sempre há luz para quem sabe
-              onde procurar.”
-            </p>
-          </article>
+            <article id="sobre_texto">
+              <p>
+                Harry Potter era só um garoto órfão morando com os tios até
+                descobrir, aos 11 anos, que era um bruxo. Convidado para estudar
+                em Hogwarts, uma escola de magia que ele nem imaginava existir,
+                Harry descobre que é famoso por ter sobrevivido ao maior bruxo
+                das trevas, Lord Voldemort. Na escola, ele aprende feitiços, voa
+                em vassouras, joga Quadribol e encara perigos. Ao lado de Rony,
+                o amigo fiel (com pavor de aranhas), e Hermione, a bruxa mais
+                brilhante da turma, Harry vive aventuras que provam que a
+                verdadeira magia está na amizade, coragem e nas escolhas. Como
+                disse Dumbledore: “são as nossas escolhas que mostram quem
+                realmente somos.”
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="personagens">
         <h2>Personagens Principais</h2>
-        <h3>Harry Potter</h3>
-        <img
-          src="./assets/img/harry.png"
-          alt="Imagem do personagem Harry Potter"
-        />
-        <p>
-          Harry Potter é conhecido como “O Menino que Sobreviveu”. Criado pelos
-          tios que o tratavam mal, descobriu aos 11 anos que era bruxo e foi
-          estudar em Hogwarts. Corajoso, leal e teimoso, Harry nunca foge de uma
-          batalha, mesmo que preferisse estar jogando Quadribol ou comendo torta
-          de abóbora no Salão Principal. Sua maior qualidade é sempre lutar pelo
-          que acha certo, mesmo que isso signifique quebrar algumas regras no
-          caminho.
-        </p>
+        <div class="personagem-box">
+          <div class="nome-personagem">
+            <h3>Harry Potter</h3>
+            <img
+              src="./assets/img/harry.png"
+              alt="Imagem do personagem Harry Potter"
+            />
+          </div>
+          <p>
+            Harry Potter é conhecido como “O Menino que Sobreviveu”. Criado
+            pelos tios que o tratavam mal, descobriu aos 11 anos que era bruxo e
+            foi estudar em Hogwarts. Corajoso, leal e teimoso, Harry nunca foge
+            de uma batalha, mesmo que preferisse estar jogando Quadribol ou
+            comendo torta de abóbora no Salão Principal. Sua maior qualidade é
+            sempre lutar pelo que acha certo, mesmo que isso signifique quebrar
+            algumas regras no caminho.
+          </p>
+        </div>
 
-        <h3>Rony Weasley</h3>
-        <img src="./assets/img/rony.png" alt="Imagem do personagem Rony" />
-        <p>
-          Rony Weasley é o sexto filho da grande família Weasley. Com cabelos
-          ruivos, muitas sardas e um apetite infinito, Rony é o amigo que sempre
-          está ao lado de Harry em qualquer confusão. Tem medo de aranhas desde
-          pequeno, mas enfrenta dragões, xadrez bruxo gigante e Comensais da
-          Morte sem pensar duas vezes (ou quase). Apesar de inseguro às vezes,
-          Rony mostra que a verdadeira coragem está em apoiar quem amamos mesmo
-          nos momentos mais sombrios e ainda fazer piada no meio do caos.
-        </p>
+        <div class="personagem-box">
+          <div class="nome-personagem">
+            <h3>Rony Weasley</h3>
+            <img src="./assets/img/rony.png" alt="Imagem do personagem Rony" />
+          </div>
+          <p>
+            Rony Weasley é o sexto filho da grande família Weasley. Com cabelos
+            ruivos, muitas sardas e um apetite infinito, Rony é o amigo que
+            sempre está ao lado de Harry em qualquer confusão. Tem medo de
+            aranhas desde pequeno, mas enfrenta dragões, xadrez bruxo gigante e
+            Comensais da Morte sem pensar duas vezes (ou quase). Apesar de
+            inseguro às vezes, Rony mostra que a verdadeira coragem está em
+            apoiar quem amamos mesmo nos momentos mais sombrios e ainda fazer
+            piada no meio do caos.
+          </p>
+        </div>
 
-        <h3>Hermione Granger</h3>
-        <img
-          src="./assets/img/hermione.png"
-          alt="Imagem da personagem Hermione Granger"
-        />
-        <p>
-          Hermione Granger nasceu em uma família não-bruxa, mas mostrou desde
-          cedo que inteligência não depende de sangue. É a aluna mais brilhante
-          de Hogwarts, sabe todos os feitiços (e as regras) de cor, além de ter
-          resposta para tudo. Mas não é só cérebro. Hermione é corajosa, justa e
-          determinada a lutar pelo que acredita, como quando criou o F.A.L.E.
-          para libertar os elfos domésticos. Sem ela, Harry e Rony provavelmente
-          teriam sido expulsos, petrificados ou mortos já no primeiro ano. Com
-          Hermione no trio, sempre há uma chance de dar certo, e uma grande
-          pilha de livros na mochila.
-        </p>
+        <div class="personagem-box">
+          <div class="nome-personagem">
+            <h3>Hermione Granger</h3>
+            <img
+              src="./assets/img/hermione.png"
+              alt="Imagem da personagem Hermione Granger"
+            />
+          </div>
+          <p>
+            Hermione Granger nasceu em uma família não-bruxa, mas mostrou desde
+            cedo que inteligência não depende de sangue. É a aluna mais
+            brilhante de Hogwarts, sabe todos os feitiços (e as regras) de cor,
+            além de ter resposta para tudo. Mas não é só cérebro. Hermione é
+            corajosa, justa e determinada a lutar pelo que acredita, como quando
+            criou o F.A.L.E. para libertar os elfos domésticos. Sem ela, Harry e
+            Rony provavelmente teriam sido expulsos, petrificados ou mortos já
+            no primeiro ano. Com Hermione no trio, sempre há uma chance de dar
+            certo, e uma grande pilha de livros na mochila.
+          </p>
+        </div>
       </section>
 
       <section id="filmes">
         <h2>Livros e Filmes em Ordem:</h2>
-        <img
-          src="./assets/img/livros.png"
-          alt="Imagem de uma pilha de livros e uma coruja em cima"
-        />
-        <ul>
-          <li>Harry Potter e a Pedra Filosofal</li>
-          <li>Harry Potter e a Câmara Secreta</li>
-          <li>Harry Potter e o Prisioneiro de Azkaban</li>
-          <li>Harry Potter e o Cálice de Fogo</li>
-          <li>Harry Potter e a Ordem da Fênix</li>
-          <li>Harry Potter e o Enigma do Príncipe</li>
-          <li>Harry Potter e as Relíquias da Morte</li>
-        </ul>
+
+        <div class="conteudo-filmes">
+          <img
+            src="./assets/img/livros.png"
+            alt="Imagem de uma pilha de livros e uma coruja em cima"
+          />
+          <ul class="lista-filmes">
+            <li>Harry Potter e a Pedra Filosofal</li>
+            <li>Harry Potter e a Câmara Secreta</li>
+            <li>Harry Potter e o Prisioneiro de Azkaban</li>
+            <li>Harry Potter e o Cálice de Fogo</li>
+            <li>Harry Potter e a Ordem da Fênix</li>
+            <li>Harry Potter e o Enigma do Príncipe</li>
+            <li>Harry Potter e as Relíquias da Morte</li>
+          </ul>
+        </div>
 
         <p>
           Os livros podem ser encontrados em praticamente todas as livrarias
@@ -152,22 +166,35 @@
       </section>
 
       <section id="video">
-        <h2></h2>
+        <h2>Uma História que Marcou Gerações !!</h2>
 
-        <div class="youtube"></div>
+        <div class="youtube">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Wt1LDl6NDJ8?si=Rh3p4iGqGsa7_zKi&amp;start=2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
     </main>
 
     <footer>
-      <section id="redes_sociais">
+      <section id="redes-sociais">
         <a href="https://www.linkedin.com/in/naah-carvalho/" target="_blank">
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+          <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
         </a>
         <a href="https://github.com/naahcarvalho" target="_blank">
-          <img src="assets/img/github.svg" alt="Github" />
+          <img src="./assets/img/github.svg" alt="Github" />
         </a>
       </section>
-      <h3>Feito com 🩷 e ✨ magia por Naah Carvalho - 2025</h3>
+      <p>Desenvolvido com feitiços autorizados pelo Ministério da Magia ⚡</p>
+      <p>Naah Carvalho, 2025</p>
     </footer>
+    <a href="#topo" class="voltar-topo">⇡</a>
   </body>
 </html>
