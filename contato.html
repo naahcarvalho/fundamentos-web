@@ -65,8 +65,9 @@
               name="name"
               placeholder="Digite seu nome"
               required
+              onkeyup="validaNome()"
             />
-            <span id="txtNome"></span>
+            <div id="txtNome"></div>
 
             <label for="email">Email: </label>
             <input
@@ -75,28 +76,30 @@
               name="email"
               placeholder="Digite seu email"
               required
+              onkeyup="validaEmail()"
             />
-            <span id="txtEmail"></span>
+            <div id="txtEmail"></div>
 
-            <label for="subject">Assunto: </label>
+            <label for="assunto">Assunto: </label>
             <input
-              id="subject"
+              id="assunto"
               type="text"
-              name="subject"
+              name="assunto"
               placeholder="Digite o título da mensagem"
               required
             />
-            <span id="txtSubject"></span>
 
-            <label for="message">Mensagem: </label>
+            <label for="mensagem">Mensagem: </label>
             <textarea
-              id="message"
-              name="message"
+              id="mensagem"
+              name="mensagem"
               placeholder="Digite sua mensagem"
               required
+              onkeyup="validaMensagem()"
             ></textarea>
+            <div id="txtMensagem"></div>
 
-            <button type="submit">Enviar</button>
+            <button type="button" onclick="enviar()">Enviar</button>
           </form>
         </div>
 
@@ -113,12 +116,15 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.700095257223!2d-1.7059204!3d55.415582799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e00e0ed23bc0d%3A0x8783a98b290f641!2sCastelo%20de%20Alnwick!5e0!3m2!1spt-BR!2sbr!4v1753365406257!5m2!1spt-BR!2sbr"
             title="Mapa do Castelo de Alnwick"
-            width="600"
-            height="450"
+            width="400"
+            height="250"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
+            id="iframe-mapa"
           ></iframe>
         </article>
       </section>
@@ -137,5 +143,6 @@
       <p>Naah Carvalho, 2025</p>
     </footer>
     <a href="#topo" class="voltar-topo">⇡</a>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
