@@ -52,7 +52,7 @@ Isso abrirá o site em seu navegador padrão, e você poderá visualizar e testa
 
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
 
-- [Site Harry Potter](https://github.com/naahcarvalho/fundamentos-web.git)
+- [Site Harry Potter](https://fundamentos-web-chi.vercel.app/index.html)
 
 ## Contribuindo
 
